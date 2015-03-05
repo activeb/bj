@@ -1,0 +1,380 @@
+.clear{
+    clear:both;
+}
+ul {
+    clear: both;
+}
+
+.content {
+    position: absolute;
+}
+
+.bar-header-secondary>input {
+    margin-top: 6px;
+    height: 31px;
+}
+
+.table-view {
+    margin: 0 !important;
+    border: none;
+}
+
+.details h1 {
+    padding-top: 16px;
+    font-size: 18px;
+}
+
+.media-object {
+    width: 42px;
+    height: 42px;
+    border-radius: 25px;
+}
+
+.icon-call {
+    background: transparent url(images/ic_action_phone_outgoing.png);
+    background-repeat: no-repeat;
+}
+
+.icon-sms {
+    background: transparent url(images/ic_action_dialog.png);
+    background-repeat: no-repeat;
+}
+
+.icon-mail {
+    background: transparent url(images/ic_action_mail.png);
+    background-repeat: no-repeat;
+}
+
+.icon-manager {
+    background: transparent url(images/ic_action_user.png);
+    background-repeat: no-repeat;
+}
+
+.icon-reports {
+    background: transparent url(images/ic_action_users.png);
+    background-repeat: no-repeat;
+}
+
+.icon-contact {
+    background: transparent url(images/ic_action_add.png);
+    background-repeat: no-repeat;
+}
+
+.icon-location {
+    background: transparent url(images/ic_action_location.png);
+    background-repeat: no-repeat;
+}
+.content{
+    /*background:url("../pics/Amy_Jones50.jpg");*/
+}
+
+body {
+  /*background-color: #40a040;*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  /*margin-top: 1em;*/
+  text-align: center;
+}
+
+#header
+{
+  /*background-color: #208020;
+  border-color: #60c060 #006000 #006000 #60c060;
+  border-style: solid;
+  border-width: 1px;*/
+  color: #ffffc0;
+  /*margin-bottom: 1ex;*/
+  padding: 4px 1em 0;
+}
+
+#header h2
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.playingField {
+  /*border-color:  #208020 #60c060 #60c060 #208020;
+  border-style: solid;
+  border-width: 1px;*/
+  color: #000000;
+  /*margin-bottom: 8px;*/
+  /*padding: 4px;*/
+  text-align: left;
+  width:49%;
+  display: inline-block;
+  height: 210px;
+}
+
+.activeField {
+  /*background-color: #60c060;
+  border-color:  #006000 #90f090 #90f090 #006000;*/
+}
+
+.cardArea {
+  font-size: 20pt;
+  height: 6em;
+  position: relative;
+  width: 67%;
+  margin-top:10%;
+}
+
+.textBox {
+  /*background-color: #ffffc0;
+  border-color:  #006000 #90f090 #90f090 #006000;
+  border-style: solid;
+  border-width: 1px;*/
+  clear: right;
+  color: #000000;
+  float: right;
+  font-family: "Times New Roman", serif;
+  font-size: 11pt;
+  font-weight: bold;
+  margin-bottom: .5em;
+  padding: .1em;
+  text-align: center;
+  width: 100%/*12em*/;
+}
+
+.name {
+  background-color: #183349/*#208020*/;
+  border-color: #793e2e/*#60c060 #006000 #006000 #60c060*/;
+  color: #ffffc0;
+}
+
+.result { color: #c00000; }
+
+.dollars { color: #006000; }
+
+.lost { color: #80b060; }
+
+#controlsArea {
+  /*margin-top: 0.5em;*/
+  text-align: left;
+    padding-left: 4pt;
+    text-align: left;
+}
+
+#rulesBox {
+  background-color: #60c060;
+  border-color:  #006000 #90f090 #90f090 #006000;
+  border-style: solid;
+  border-width: 1px;
+  display: none;
+  margin: 1em auto 1em auto;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: left;
+  width: 40em;
+}
+
+input.button {
+  margin-top: .25em;
+  width: 8em;
+}
+
+/******************************************************************************
+* Playing card styles.                                                        *
+******************************************************************************/
+
+.card {
+  background-image: url("../images/coverback.png");
+  background-size: contain;
+  border-color: #808080 #000000 #000000 #808080;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 13pt;
+  position: absolute;
+  width:  3.75em;
+  height: 5.50em;
+}
+
+.front {
+  background-color: #ffffff;
+  color: #000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.red { color: #ff0000; }
+
+.index {
+   font-size: 50%;
+    font-weight: bold;
+    left: 0.25em;
+    line-height: 10px;
+    position: absolute;
+    text-align: center;
+    top: 0.5em;
+}
+
+.ace {
+  font-size: 300%;
+  position: absolute;
+  left: 0.325em;
+  top:  36%/*0.250em*/;
+}
+
+.face {
+  border: 1px solid #000000;
+  position: absolute;
+  left: 0.55em;
+  top:  0.65em;
+  width:  2.6em;
+  height: 4.0em;
+}
+
+.spotA1 { position: absolute; left: 0.60em; top: 0.5em; }
+.spotA2 { position: absolute; left: 0.60em; top: 1.5em; }
+.spotA3 { position: absolute; left: 0.60em; top: 2.0em; }
+.spotA4 { position: absolute; left: 0.60em; top: 2.5em; }
+.spotA5 { position: absolute; left: 0.60em; top: 3.5em; }
+
+.spotB1 { position: absolute; left: 1.55em; top: 0.5em; }
+.spotB2 { position: absolute; left: 1.55em; top: 1.0em; }
+.spotB3 { position: absolute; left: 1.55em; top: 2.0em; }
+.spotB4 { position: absolute; left: 1.55em; top: 3.0em; }
+.spotB5 { position: absolute; left: 1.55em; top: 3.5em; }
+
+.spotC1 { position: absolute; left: 2.50em; top: 0.5em; }
+.spotC2 { position: absolute; left: 2.50em; top: 1.5em; }
+.spotC3 { position: absolute; left: 2.50em; top: 2.0em; }
+.spotC4 { position: absolute; left: 2.50em; top: 2.5em; }
+.spotC5 { position: absolute; left: 2.50em; top: 3.5em; }
+
+.player-cont,.dealer-cont {
+    float: right;
+    height: 180px;
+    /*overflow-y: hidden;*/
+    width: 45%;
+    /*border:4px solid #793e2e;*/
+    border-radius:5px;
+    padding:4px;
+    background: url("../images/pattern-1.png") repeat #7d3d2f;
+    min-height:98%;
+    border: 1px solid #1b5686;
+}
+div.name{
+    border-radius:5px;
+    line-height: 250%;
+}
+.player-det, .dealer-det {
+    height: 76%;
+    background: #eaf9ff;
+    border-bottom: 4px solid #c8d6db;
+    border-radius:5px;
+}
+.bett{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:0 10px;
+}
+#player0Bet.dollars{
+    line-height: 300%;
+    color: #000000;
+    /*background:url("../images/coins.png") scroll 10% 50% no-repeat;*/
+    border-bottom: 1px solid #bfddf4;
+    padding-left: 20px;
+    background-size: 32%;
+}
+#player0Score, #dealerScore{
+    /*margin-top: 15%;
+    margin-bottom: 14px;*/
+    margin-bottom: 0px;
+    font-size: 16pt;
+    color: #4fa02e;
+    background: -webkit-linear-gradient(#77bb55,#4fa02e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 2px 2px #c8d6db;
+		/*	content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+			background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+			background:    -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+			background:     -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+			background:      -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+			background:         linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);*/
+    
+}
+#player0points, #dealerpoints{
+    min-height:10pt;
+}
+#player0points span, #dealerpoints span{
+    font-size:10pt;
+    display:none;   
+}
+#increase,#decrease{
+    display:inline-block;
+    width:30px;
+    height: 30px;
+    margin-left: 12%;
+}
+#increase{
+    background:url("../images/bet-up.png") scroll 50% 50% / 50% no-repeat;
+}
+#decrease{
+    background:url("../images/bet-down.png") scroll 50% 50% / 50% no-repeat;
+}
+form#controls{
+    height:100%;
+}
+#player0Bet{
+    font-size: 8pt;
+}
+
+#controlsArea input, #controlsArea div {
+    display: inline-block;
+    font-size: 8pt;
+    line-height: 8pt;
+}
+.credits-def {
+    float: right;
+    margin-right: 6pt;
+    width: 25%;
+}
+.credits-def div {
+    float: right;
+    text-align: left;
+    margin-bottom: 0;
+    color: #ffffff;
+    width: 100%;
+    padding-left:20%
+}
+.credits-def div#credits{
+    background: url('../images/coins.png') no-repeat scroll 0 50% / 10% rgba(0, 0, 0, 0);
+}
+.credits-def div#default{
+    background: url('../images/default-bet.png') no-repeat scroll 0 50% / 10% rgba(0, 0, 0, 0);
+}
+#split,#surrender,#player0Result{
+    display:none;
+}
+.content-top,#controlsArea{
+    display:block;
+}
+.content-top{
+    min-height: 210px;
+    background: url('../images/patternbg-1.png') repeat;
+    padding-top: 6px;
+}
+#controlsArea{
+    /*line-height: 24pt;*/
+    background:url('../images/bottompattern.png') repeat;
+    border-top: 4px solid #d87152;
+    padding: 4pt 0;
+}
+#dealerScore {
+    margin-top: 50%;
+}
+#controlsArea input {
+    line-height: 16pt;
+    width: 16%;
+}
