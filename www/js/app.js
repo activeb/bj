@@ -50,7 +50,7 @@
     //}, false);
 
     /* ---------------------------------- Local Functions ---------------------------------- */
-    window.plugin.statusbarOverlay.hide();
+    //window.plugin.statusbarOverlay.hide();
     function clean_doom() {
 		
 		$('.page').not('.page:last').remove();
