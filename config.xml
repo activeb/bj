@@ -1,23 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<widget id="com.valiprod.BlackJack" xmlns="http://www.w3.org/ns/widgets" version="0.0.1" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>BlackJack</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
-    <content src="index.html"/>
-    <access origin="*"/>
-    <preference name="LogLevel" value="VERBOSE"/>
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.valiprod.MyProgrammeTV" version="0.0.1" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>MyProgrammeTV</name>
+  <description>
+    Télévison en ligne et en direct sur internet – TV en live
+  </description>
+  <author email="contact@valiprod.com" href="https://github.com/appfeel/admob-google-cordova">AppFeel</author>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="LogLevel" value="VERBOSE"/>
   <preference name="debuggable" value="true"/>
-  <preference name="orientation" value="landscape" />
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
+  
+  <gap:plugin name="com.admob.google" source="plugins.cordova.io" />
+  <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+  <gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
 
   
+  <icon src="res/touch-icon-iphone-retina.png" />
+  
+  <platform name="android">
+    <icon src="res/android/apple-touch-startup-image-320x460.png" density="ldpi" />
+    <icon src="res/android/apple-touch-startup-image-320x460.png" density="mdpi" />
+    <icon src="res/android/apple-touch-startup-image-320x460.png" density="hdpi" />
+    <icon src="res/android/apple-touch-startup-image-320x460.png" density="xhdpi" />
+    <icon src="res/android/apple-touch-startup-image-320x460.png" density="xxhdpi" />
+    <icon src="res/android/apple-touch-startup-image-320x460.png" density="xxxhdpi" />
+  </platform>
+  
+  <platform name="ios">
+    <!-- iOS 7.0+ -->
+    <!-- iPhone / iPod Touch  -->
+    <icon src="res/ios/touch-icon-iphone.png" width="60" height="60" />
+    <icon src="res/ios/touch-icon-iphone-retina.png" width="120" height="120" />
+    <!-- iPad -->
+    <icon src="res/ios/touch-icon-ipad.png" width="76" height="76" />
+    <icon src="res/ios/touch-icon-ipad-retina.png" width="152" height="152" />
+    <!-- iOS 6.1 -->
+    <!-- Spotlight Icon -->
+    
+  </platform>
 </widget>
