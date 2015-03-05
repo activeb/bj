@@ -103,7 +103,7 @@ body {
   text-align: left;
   width:49%;
   display: inline-block;
-  height: 210px;
+  height: 100%;
 }
 
 .activeField {
@@ -259,10 +259,11 @@ div.name{
     line-height: 250%;
 }
 .player-det, .dealer-det {
-    height: 76%;
+    height: 75%;
     background: #eaf9ff;
     border-bottom: 4px solid #c8d6db;
     border-radius:5px;
+    position: relative;
 }
 .bett{
     display:block;
@@ -315,7 +316,7 @@ div.name{
     display:inline-block;
     width:30px;
     height: 30px;
-    margin-left: 12%;
+    /*margin-left: 12%;*/
 }
 #increase{
     background-image:url("../images/bet-up.png");
@@ -329,7 +330,7 @@ div.name{
     background-size: 50%;
     background-repeat: no-repeat;
 }
-form#controls{
+form{
     height:100%;
 }
 #player0Bet{
@@ -373,7 +374,8 @@ form#controls{
     display:block;
 }
 .content-top{
-    min-height: 210px;
+    /*min-height: 210px;*/
+    height: 75%;
     background: url('../images/patternbg-1.png') repeat;
     padding-top: 6px;
 }
@@ -389,4 +391,13 @@ form#controls{
 #controlsArea input {
     line-height: 16pt;
     width: 16%;
+}
+#inc-dec{
+    position: absolute;
+    position: absolute;
+    width: 100%;
+    text-align:center;
+}
+#inc-dec input:last-of-type {
+    margin-left: 14%;
 }

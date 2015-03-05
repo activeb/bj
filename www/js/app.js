@@ -32,92 +32,27 @@
     //});
 
     /* --------------------------------- Event Registration -------------------------------- */
-    //document.addEventListener('deviceready', function () {
-    //    StatusBar.overlaysWebView( false );
-    //    StatusBar.backgroundColorByHexString('#ffffff');
-    //    StatusBar.styleDefault();
-    //    FastClick.attach(document.body);
-    //    if (navigator.notification) { // Override default HTML alert with native dialog
-    //        window.alert = function (message) {
-    //            navigator.notification.alert(
-    //                message,    // message
-    //                null,       // callback
-    //                "Workshop", // title
-    //                'OK'        // buttonName
-    //            );
-    //        };
-    //    }
-    //}, false);
+    document.addEventListener('deviceready', function () {
+        StatusBar.overlaysWebView( false );
+        StatusBar.backgroundColorByHexString('#ffffff');
+        StatusBar.styleDefault();
+        FastClick.attach(document.body);
+        if (navigator.notification) { // Override default HTML alert with native dialog
+            window.alert = function (message) {
+                navigator.notification.alert(
+                    message,    // message
+                    null,       // callback
+                    "Workshop", // title
+                    'OK'        // buttonName
+                );
+            };
+        }
+    }, false);
 
     /* ---------------------------------- Local Functions ---------------------------------- */
-    //window.plugin.statusbarOverlay.hide();
     function clean_doom() {
 		
 		$('.page').not('.page:last').remove();
 		
 	};
-	function replaceNavigator(origNavigator) {
-	    var CordovaNavigator = function() {};
-	    CordovaNavigator.prototype = origNavigator;
-	    var newNavigator = new CordovaNavigator();
-	    // This work-around really only applies to new APIs that are newer than Function.bind.
-	    // Without it, APIs such as getGamepads() break.
-	    if (CordovaNavigator.bind) {
-		for (var key in origNavigator) {
-		    if (typeof origNavigator[key] == 'function') {
-			newNavigator[key] = origNavigator[key].bind(origNavigator);
-		    } else {
-			(function(k) {
-			    Object.defineProperty(newNavigator, k, {
-				get: function() {
-				    return origNavigator[k];
-				},
-				configurable: true,
-				enumerable: true
-			    });
-			})(key);
-		    }
-		}
-	    }
-	    return newNavigator;
-	}
-	
-        var admobid = {};
-        if( /(android)/i.test(navigator.userAgent) ) { 
-            admobid = { // for Android
-                banner: 'ca-app-pub-6869992474017983/9375997553',
-                interstitial: 'ca-app-pub-6869992474017983/1657046752'
-            };
-        } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
-            admobid = { // for iOS
-                banner: 'ca-app-pub-6869992474017983/4806197152',
-                interstitial: 'ca-app-pub-6869992474017983/7563979554'
-            };
-        } else {
-            admobid = { // for Windows Phone
-                banner: 'ca-app-pub-6869992474017983/8878394753',
-                interstitial: 'ca-app-pub-6869992474017983/1355127956'
-            };
-        }
-        
-        function initApp() {
-            if (typeof admob !== 'undefined') {
-                //console.log('jaja');
-                setTimeout(function(){
-                    admob.createBannerView({
-                        publisherId : admobid.banner,
-                        //position : AdMob.AD_POSITION.BOTTOM_CENTER,
-                        autoShow : true
-                    });
-                },200);
-                admob.requestInterstitialAd({
-                    publisherId : admobid.interstitial,
-                    //position : AdMob.AD_POSITION.BOTTOM_CENTER,
-                    autoShow : true
-                    });
-            }
-        }
-        
-        document.addEventListener('deviceready', initApp, false);
-	
 }());

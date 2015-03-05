@@ -1017,7 +1017,7 @@ function changeBet(n) {
   defaultBet += n;
   defaultBet = Math.max(Math.min(defaultBet, maxBet), minBet);
   defaultTextNode.nodeValue = "Default Bet: " + formatDollar(defaultBet);
-
+  //updateBetDisplay(0);
   // Reset the increase/decrease buttons.
 
   EnableBetButtons();
