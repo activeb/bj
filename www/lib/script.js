@@ -536,7 +536,7 @@ function startRound() {
   // Start dealing the cards.
   dealRoundCounter = 1;
   dealRound();
-  $('#player0Bet.dollars').css("background","url('assets/images/coins.png') no-repeat scroll 0 50% / 30% rgba(0, 0, 0, 0)");
+  $('#player0Bet.dollars').css("background-image","url('assets/images/coins.png'").css("background-position","0 50%;").css("background-size","30%").css("background-repeat","no-repeat");
   $('#player0points span').css("display","block");
 }
 

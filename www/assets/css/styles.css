@@ -284,9 +284,9 @@ div.name{
     margin-bottom: 0px;
     font-size: 16pt;
     color: #4fa02e;
-    background: -webkit-linear-gradient(#77bb55,#4fa02e);
+    /*background: -webkit-linear-gradient(#77bb55,#4fa02e);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     text-shadow: 3px 2px 2px #c8d6db;
 		/*	content: '';
 			display: block;
@@ -318,10 +318,16 @@ div.name{
     margin-left: 12%;
 }
 #increase{
-    background:url("../images/bet-up.png") scroll 50% 50% / 50% no-repeat;
+    background-image:url("../images/bet-up.png");
+    background-position: 50% 50%;
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 #decrease{
-    background:url("../images/bet-down.png") scroll 50% 50% / 50% no-repeat;
+    background-image:url("../images/bet-down.png");
+    background-position: 50% 50%;
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 form#controls{
     height:100%;
@@ -349,10 +355,16 @@ form#controls{
     padding-left:20%
 }
 .credits-def div#credits{
-    background: url('../images/coins.png') no-repeat scroll 0 50% / 10% rgba(0, 0, 0, 0);
+    background-image: url('../images/coins.png');
+    background-position: 0 50%;
+    background-size: 10%;
+    background-repeat: no-repeat;
 }
 .credits-def div#default{
-    background: url('../images/default-bet.png') no-repeat scroll 0 50% / 10% rgba(0, 0, 0, 0);
+    background-image: url('../images/default-bet.png');
+    background-position: 0 50%;
+    background-size: 10%;
+    background-repeat: no-repeat;
 }
 #split,#surrender,#player0Result{
     display:none;
