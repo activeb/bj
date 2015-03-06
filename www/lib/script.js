@@ -488,7 +488,7 @@ function getNextCard() {
   // If there are no cards left, start a new deck.
 
   if (deck.cardCount() == 0) {
-    alert("New Deck");
+    showAlert("New Deck");
     newDeck();
   }
 
@@ -523,7 +523,7 @@ function startRound() {
   // If the burn card was reached, start a new deck.
 
   if (deck.cardCount() < burnCard) {
-    alert("New deck.");
+    showAlert("New Deck");
     newDeck();
   }
 
@@ -641,10 +641,10 @@ function offerInsurance() {
     {
       dealer.cardsNode.firstChild.firstChild.style.visibility = "";
       credits += player[0].bet;
-      alert("Dealer has Blackjack, you win " + formatDollar(player[0].bet));
+      shoAlert("Dealer has Blackjack, you win " + formatDollar(player[0].bet));
     }
     else
-      alert("Dealer does not have Blackjack, you lose " + formatDollar(amount));
+      showAlert("Dealer does not have Blackjack, you lose " + formatDollar(amount));
 
     // Update credits.
 
@@ -909,7 +909,7 @@ function endRound() {
     }
     else if ((player[i].blackjack && !dealer.blackjack) ||
              (p <= 21 && d > 21) || (p <= 21 && p > d)) {
-      setTimeout(function(){alert('Player Wins');},200);
+      setTimeout(function(){showAlert('Player Wins');},200);
       player[i].resultTextNode.nodeValue = "Player Wins";
       tmp = 2 * player[i].bet;
 
@@ -924,16 +924,16 @@ function endRound() {
     else if ((dealer.blackjack && !player[i].blackjack) ||
              p > 21 || p < d) {
         if (p > 21) {
-          setTimeout(function(){alert("Busted (" + p + ")")},100);
+          setTimeout(function(){showAlert("Busted (" + p + ")")},100);
         } else {
-          setTimeout(function(){alert('Player Loses');},200);
+          setTimeout(function(){showAlert('Player Loses');},200);
         }
       
       player[i].resultTextNode.nodeValue = "Player Loses";
       addClassName(player[i].betTextNode.parentNode, "lost");
     }
     else {
-      setTimeout(function(){alert('Push');},200);
+      setTimeout(function(){showAlert('Push');},200);
       player[i].resultTextNode.nodeValue = "Push";
       credits += player[i].bet;
     }

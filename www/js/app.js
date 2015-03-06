@@ -91,5 +91,22 @@
             }
         }
         
-        document.addEventListener('deviceready', initApp, false);	
+        document.addEventListener('deviceready', initApp, false);
+	function alertDismissed() {
+            // do something
+        }
+	 function showAlert(message) {
+	    navigator.notification.alert(
+	        message,  // message
+	         alertDismissed,         // callback
+	        'Blackjack' ,            // title
+	        'D\'accord'                  // buttonName
+	    );
+	}
+
+	
+	
+	
+	
+	
 }());
