@@ -16,9 +16,9 @@ function alertDismissed() {
 }
  function showAlert(message) {
     navigator.notification.alert(
-        message,  // message
+        '',  // message
          alertDismissed,         // callback
-        'Blackjack' ,            // title
+        message ,            // title
         'D\'accord'                  // buttonName
     );
 }
