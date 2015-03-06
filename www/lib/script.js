@@ -10,6 +10,20 @@ function Card(rank, suit) {
   this.createNode = cardCreateNode;
 }
 
+
+function alertDismissed() {
+    // do something
+}
+ function showAlert(message) {
+    navigator.notification.alert(
+        message,  // message
+         alertDismissed,         // callback
+        'Blackjack' ,            // title
+        'D\'accord'                  // buttonName
+    );
+}
+
+
 //-----------------------------------------------------------------------------
 // cardCreateNode(): Returns a DIV node which can be used to display the card 
 // on a page.
