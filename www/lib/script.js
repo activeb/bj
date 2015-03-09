@@ -22,6 +22,22 @@ function alertDismissed() {
         'D\'accord'                  // buttonName
     );
 }
+function onConfirm(buttonIndex) {
+        //alert('You selected button ' + buttonIndex);
+        return buttonIndex;
+      console.log(buttonIndex);
+    }
+
+    // Show a custom confirmation dialog
+    //
+    function showConfirm() {
+        navigator.notification.confirm(
+            '', // message
+             onConfirm,            // callback to invoke with index of button pressed
+            'Do you want to buy insurance?',           // title
+            ['Oui','Non']         // buttonLabels
+        );
+    }
 
 
 //-----------------------------------------------------------------------------
@@ -642,7 +658,7 @@ function offerInsurance() {
 
   // Offer insurance bet to player. This is a side bet so it's resolved here.
 
-  if (confirm("Do you want to buy insurance?")) {
+  if (showConfirm() == 0) {
 
     // Take half of player's current bet from credits.
 
